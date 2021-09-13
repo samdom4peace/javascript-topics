@@ -245,8 +245,7 @@ h2{
 }
 
 h3{
-   font-size: 30px;
-   font-weight: bold;
+   font-size: 27px;
 }
 
 h4{
@@ -255,7 +254,6 @@ h4{
 
 h5{
     font-size: 21px;
-    font-weight: bold;
     text-decoration: underline;
 }
 /* End Styles for the Headings */
@@ -284,14 +282,10 @@ button.topics{
 /* Links */
 a{
     text-decoration: none;
+    color: darkblue;
 }
 
-a.links{
-   color: darkblue;
-   font-weight: bold;
-}
-
-a.links:hover{
+a:hover{
     color: red;
 }
 /* End Links */
@@ -374,7 +368,7 @@ td.ads, th.ads {
 
 .w3-padding-240{padding-top:240px!important;padding-bottom:240px!important}
 
-.w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.w3-image{max-width:100%;height:auto}img{vertical-align:middle}
 .w3-table,.w3-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.w3-table-all{border:1px solid #ccc}
 .w3-bordered tr,.w3-table-all tr{border-bottom:1px solid #ddd}.w3-striped tbody tr:nth-child(even){background-color:#f1f1f1}
 .w3-table-all tr:nth-child(odd){background-color:#fff}.w3-table-all tr:nth-child(even){background-color:#f1f1f1}
