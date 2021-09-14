@@ -32,6 +32,12 @@
             <div class="w3-bar-block">
                 <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Home</a> 
                 <a href="#greeting" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Greeting</a>
+                <a href="#variablesDataTypes" 
+                    onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Variables and Data Types
+                </a>
+                <a href="#numbersOperators" 
+                    onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Numbers and Operators
+                </a>
                 <a href="#references" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">References</a> 
                 <a href="https://www.chukwuemekasamuel.com/portfolios.html" target="_blank" class="w3-bar-item w3-button w3-padding">Portfolio</a>
                 <a href="https://chukwuemekasamuel.weebly.com/" target="_blank" class="w3-bar-item w3-button w3-padding">Contact</a>
@@ -61,7 +67,77 @@
             </p>
            </div>
             <!-- End Greeting -->    
-                       
+
+            <!-- Variables and Data Types -->
+            <div class="w3-container w3-padding-32" id="variablesDataTypes">
+                <h2 class="w3-padding-16">Variables and Data Types</h2>
+                <hr>
+            
+                <!-- 
+                    What do you know about the State of Ohio? 
+                    Declare ids for the HTML paragraph elements
+                -->
+                <h3>What Do You Know About the State of Ohio?</h3>
+                <p id="stateOhio"></p>
+                <p id="numStateOhio"></p>
+                <p id="povertyRateOhio"></p>
+                <p id="landAreaOhio"></p>
+                <p id="mottoOhio"></p>
+                <p id="isMottoTrue"></p>
+            </div>
+            <!-- End Variables and Data Types -->
+
+            <!-- Numbers and Operators -->
+            <div class="w3-container w3-padding-32" id="numbersOperators">
+                <h2 class="w3-padding-16">Numbers and Operators</h2>
+                <hr>
+            
+               <!-- 
+                   Solve Questions (10.), (6.), (7.), and (23.) on the Numbers website:
+                    www.numbersandnotations.appspot.com/numbers.html
+                -->
+                <p>
+                    Questions (10.), (6.), (7.), and (23.) on the
+                    <a href="https://numbersandnotations.appspot.com/numbers.html" 
+                        target="_blank">Numbers 
+                    </a> website <br>
+                    (www.numbersandnotations.appspot.com/numbers.html) 
+                </p>
+                
+                <p>
+                    The answers to: <br><br>
+                    Question (10.) is: <span id="answerQuestion10"></span> <br><br>
+                    Question (6.) is: <span id="answerQuestion6"></span> <br><br>
+                    Question (7.) is: <span id="answerQuestion7"></span> <br><br>
+                    Question (23.) is: <span id="answerQuestion23"></span> 
+                </p>
+
+                <br><br>
+
+                 <!-- 
+                   Solve Question (1.) on the Percent Applications website:
+                    www.fractions-decimals-percents.appspot.com/percentApplications.html
+                -->
+                <p>
+                    Question (1.) on the
+                    <a href="https://fractions-decimals-percents.appspot.com/percentApplications.html" 
+                        target="_blank">Percent Applications
+                    </a> website <br>
+                    (www.fractions-decimals-percents.appspot.com/percentApplications.html) 
+                </p>
+
+                <p>
+                    <u>First Approach:</u> Assignment Operator: Use Multiple Variables <br>
+                    The total bill (not rounded) is <mark><span id="exactTotalBillFirst"></span></mark> <br>
+                    The total bill (rounded) is <mark>$<span id="approximateTotalBillFirst"></span></mark> <br><br>
+
+                    <u>Second Approach:</u> Compound Assignment Operators: Use a Single Variable <br>
+                    The total cost (not rounded) is <mark>$<span id="exactTotalCostFirst"></span></mark> <br>
+                    The total cost (rounded) is <mark>$<span id="approximateTotalCostFirst"></span></mark>
+                </p>
+            </div>
+            <!-- End Numbers and Operators -->
+
             <!-- References -->
             <div class="w3-container w3-padding-32" id="references">
                 <h2 class="w3-padding-16">References</h2>
@@ -96,5 +172,7 @@
         <!-- End page content -->
 
         <script src="index.js"></script>
+        <script src="dataTypes.js"></script>
+        <script src="numbersOperators.js"></script>
     </body>
 </html>
