@@ -44,6 +44,12 @@
                 <a href="#statements" 
                     onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Statements
                 </a>
+                <a href="#functions" 
+                    onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Functions
+                </a>
+                <a href="#BodyMassIndexCalculator" 
+                    onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Body Mass Index Calculator
+                </a>
                 <a href="#references" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">References</a> 
                 <a href="https://www.chukwuemekasamuel.com/portfolios.html" target="_blank" class="w3-bar-item w3-button w3-padding">Portfolio</a>
                 <a href="https://chukwuemekasamuel.weebly.com/" target="_blank" class="w3-bar-item w3-button w3-padding">Contact</a>
@@ -229,6 +235,88 @@
             </div>
             <!-- End Statements -->
 
+            <!-- Functions -->
+            <div class="w3-container w3-padding-32" id="functions">
+                <h2 class="w3-padding-16">Functions</h2>
+                <hr>
+                            
+                <h3>Celsius Temperature to Fahrenheit Temperature Conversion</h3>
+                <!-- What is the normal body temperature of a human being? It is about 37°C -->
+                <!-- What is that temperature in Fahrenheit? -->
+                <p id="convertedFahrenheitTemp"></p>
+                
+                <h3>Fahrenheit Temperature to Celsius Temperature Conversion</h3>
+                <!-- What is the normal body temperature of a human being? It is about 98.6°F -->
+                <!-- What is that temperature in Celsius? -->
+                <p id="convertedCelsiusTemp"></p>
+            </div>
+            <!-- End Functions -->
+
+            <!-- Body Mass Index Calculator -->
+            <div class="w3-container w3-padding-32" id="BodyMassIndexCalculator">
+                <h2 class="w3-padding-16">Body Mass Index (BMI) Calculator</h2>
+                <hr>
+                            
+                <h3>BMI Calculator for the United States System (Customary System)</h3>
+                <div class="w3-row-padding">
+                    <div class="w3-half w3-section">
+                        <ul class="w3-ul w3-card w3-hover-shadow">
+                            <li class="darkblue w3-xlarge w3-padding-32">
+                                <u>Given:</u> first name, last name, weight (pounds), height (inches) <br />
+                                <u>To:</u> Calculate and Interpret the Body Mass Index
+                            </li>
+    
+                            <li class="w3-padding-16 white">
+                                <form id="BMICalculator" class="w3-padding">
+                                    <p>
+                                        <label for="firstName">First Name:</label>
+                                        <input type="text" name="firstName" id="firstName" class="names" autocomplete="off" required>
+                                    </p>
+                                    <p>
+                                        <label for="lastName">Last Name:</label>
+                                        <input type="text" name="lastName" id="lastName" class="names" autocomplete="off" required>
+                                    </p>
+                                    <p>
+                                        <label for="weight">Weight:</label>
+                                        <input type="text" name="weight" id="weight" class="normal" autocomplete="off" required> 
+                                        pounds
+                                    </p>
+                                    <p>
+                                        <label for="height">Height:</label>
+                                        <input type="text" name="height" id="height" class="normal" autocomplete="off" required> 
+                                        inches
+                                    </p>
+    
+                                    <p class="w3-center">
+                                        <button onclick="BMICalculator()" type="submit" class="normal">Calculate</button>
+                                        <button onclick="erase()" type="reset" class="normal">Clear</button>
+                                    </p>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="w3-half w3-section">
+                        <ul class="w3-ul w3-card w3-hover-shadow">
+                            <li class="khaki w3-xlarge w3-padding-32">
+                                BMI Results for:  
+                                <mark><span id="userFirstName"></span> <span id="userLastName"></span></mark>
+                            </li>
+    
+                            <li class="w3-padding-16 white">
+                                <!-- Display the error messages for the weight and the height in red color -->
+                                <div id="userErrorMessage" style="color: red;"></div>
+
+                                <!-- Display the BMI, interpret it, and advise the user accordingly based on the BMI -->
+                                Your Body Mass Index is: <mark><span id="userBMI"></span></mark> <br>
+                                You are: <mark><span id="interpretBMI"></span></mark>
+                                <div id="adviceBMI"></div>                            
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Body Mass Index Calculator -->
+
             <!-- References -->
             <div class="w3-container w3-padding-32" id="references">
                 <h2 class="w3-padding-16">References</h2>
@@ -267,5 +355,7 @@
         <script src="numbersOperators.js"></script>
         <script src="dateTime.js"></script>
         <script src="statements.js"></script>
+        <script src="functions.js"></script>
+        <script src="bodyMassIndex.js"></script>
     </body>
 </html>

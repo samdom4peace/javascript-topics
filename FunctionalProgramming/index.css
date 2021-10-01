@@ -24,7 +24,6 @@ body{
     height: 100%;
 }
 
-
 .quotesDay{
     font-size: 28px;
     font-family: 'Times New Roman', 'Bell MT', 'David';
@@ -191,41 +190,81 @@ hr{
 }
 
 /* Styling for the Forms */
-input[type=text], select{
+input[type=text], select {
     border: 2px solid olive;
-    border-radius: 3px;
-    width: 25%;
-    padding: 7px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
     text-align: center;
+    font-family: 'Times New Roman', Georgia, 'Bell MT';
+    font-size: 21px;
 }
 
-button, input[type=reset]{
+button, input[type=reset] {
     width: 30%;
-    padding: 5px;
+    padding: 10px;
     margin: 0px 4px;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
-    background-color: gold;
+    font-family: Georgia, 'Times New Roman';
+    font-size: 25px;
+    background-color: khaki;
     border: 2px solid green;
 }
 
-input.term{
-    border: 2px solid black;
-    border-radius: 3px;
-    width: 18%;
-    padding: 7px
-}
+    button.short, input.short[type=reset] {
+        width: 16%;
+        padding: 10px;
+        margin: 0px 4px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 21px;
+        font-family: 'Times New Roman', Georgia, 'Bell MT';
+        background-color: gold;
+        border: 2px solid green;
+    }
 
-input.terms{
+input.short {
     border: 2px solid olive;
-    border-radius: 3px;
-    width: 25%;
-    padding: 7px
+    border-radius: 5px;
+    width: 16%;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Georgia, 'Bell MT';
+    font-size: 21px;
 }
 
-.marginForm{
-    margin-left: 10px;
+input.normal {
+    border: 2px solid olive;
+    border-radius: 5px;
+    width: 25%;
+    padding: 10px;
+    font-family: 'Times New Roman', Georgia, 'Bell MT';
+    font-size: 25px;
+}
+
+input.names {
+    border: 2px solid olive;
+    border-radius: 5px;
+    width: 50%;
+    padding: 10px;
+    font-family: 'Times New Roman', 'Bell MT', 'Vani';
+    font-size: 25px;
+}
+
+textarea {
+    resize: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 21px;
+    padding: 10px;
+    height: 150px;
+    width: 75%;
+    min-height: 50px;
+    box-sizing: border-box;
+    overflow: visible;
+    font-family: 'Times New Roman', 'Bell MT', 'David', 'Georgia';
 }
 /* End of Styling for the Forms */
 
