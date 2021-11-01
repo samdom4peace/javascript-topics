@@ -158,8 +158,8 @@ function measuresPosition(event)
         document.getElementById("maximum").value = maximum;
 
         // Calculate the middle quartile (median) for all sample sizes (odd and even)
-        middleQuartile = 
-        (dataSort3[Math.floor((sampleSize3 - 1)/2)] * 1 + dataSort3[Math.ceil((sampleSize3 - 1)/2)] * 1)/2;
+        middleQuartile = parseFloat((dataSort3[Math.floor((sampleSize3 - 1)/2)] * 1 + 
+        dataSort3[Math.ceil((sampleSize3 - 1)/2)] * 1)/2);
 
         // Used in the calculations of the lower and upper quartiles
         firstPart = Math.floor((sampleSize3half - 1)/2);
@@ -170,14 +170,14 @@ function measuresPosition(event)
         {
             for (var value = 0; value < sampleSize3half; value++)
             {
-                lowerQuartile = (dataSort3[firstPart] * 1 + dataSort3[secondPart] * 1)/2;
+                lowerQuartile = parseFloat((dataSort3[firstPart] * 1 + dataSort3[secondPart] * 1)/2);
             }
         }
 
         // Calculate the lower quartile for an odd sample size
         if(sampleSize3 % 2 !== 0)           // definition of an odd number
         {
-            lowerQuartile = dataSort3[Math.floor(0.25 * sampleSize3)];
+            lowerQuartile = parseFloat(dataSort3[Math.floor(0.25 * sampleSize3)]);
         }
 
         // Calculate the upper quartile for an even sample size
@@ -187,14 +187,14 @@ function measuresPosition(event)
                 
             for (var value = 0; value < sampleSize3half; value++)
             {         
-            upperQuartile = (dataSort3reverse[firstPart] * 1 + dataSort3reverse[secondPart] * 1)/2;
+            upperQuartile = parseFloat((dataSort3reverse[firstPart] * 1 + dataSort3reverse[secondPart] * 1)/2);
             }
         }
 
         // Calculate the upper quartile for an odd sample size
         if(sampleSize3 % 2 !== 0)           // definition of an odd number
         {
-            upperQuartile = dataSort3[Math.floor(0.75 * sampleSize3)];
+            upperQuartile =parseFloat(dataSort3[Math.floor(0.75 * sampleSize3)]);
         }
         
         // Display the quartiles
