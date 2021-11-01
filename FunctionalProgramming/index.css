@@ -253,12 +253,20 @@ input.names {
     font-size: 25px;
 }
 
+input.long {
+    border: 2px solid olive;
+    border-radius: 5px;
+    width: 70%;
+    padding: 10px;
+    font-family: 'Times New Roman', Georgia, 'Bell MT';
+    font-size: 25px;
+}
+
 textarea {
     resize: none;
     border: 2px solid black;
     border-radius: 5px;
-    font-size: 21px;
-    padding: 10px;
+    font-size: 25px;
     height: 150px;
     width: 75%;
     min-height: 50px;

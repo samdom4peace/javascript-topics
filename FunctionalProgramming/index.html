@@ -50,6 +50,9 @@
                 <a href="#BodyMassIndexCalculator" 
                     onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Body Mass Index Calculator
                 </a>
+                <a href="#arrays" 
+                    onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Arrays
+                </a>
                 <a href="#references" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">References</a> 
                 <a href="https://www.chukwuemekasamuel.com/portfolios.html" target="_blank" class="w3-bar-item w3-button w3-padding">Portfolio</a>
                 <a href="https://chukwuemekasamuel.weebly.com/" target="_blank" class="w3-bar-item w3-button w3-padding">Contact</a>
@@ -278,19 +281,20 @@
                                     </p>
                                     <p>
                                         <label for="weight">Weight:</label>
-                                        <input type="text" name="weight" id="weight" class="normal" autocomplete="off" required> 
+                                        <input type="text" name="weight" id="weight" class="normal" autocomplete="off" required>
                                         pounds
                                     </p>
                                     <p>
                                         <label for="height">Height:</label>
-                                        <input type="text" name="height" id="height" class="normal" autocomplete="off" required> 
+                                        <input type="text" name="height" id="height" class="normal" autocomplete="off" required>
                                         inches
                                     </p>
-    
+                            
                                     <p class="w3-center">
                                         <button onclick="BMICalculator()" type="submit" class="normal">Calculate</button>
                                         <button onclick="erase()" type="reset" class="normal">Clear</button>
                                     </p>
+                                </form>
                             </li>
                         </ul>
                     </div>
@@ -316,6 +320,138 @@
                 </div>
             </div>
             <!-- End Body Mass Index Calculator -->
+
+            <!-- Arrays -->
+            <div class="w3-container w3-padding-32" id="arrays">
+                <h2 class="w3-padding-16">Arrays: Data Analysis: Descriptive Statistics</h2>
+                <hr>
+                            
+                <h3>Measures of Center: Mean, Median, Mode, Midrange</h3>
+                <!-- Measures of Center: Mean, Median, Mode, Midrange -->
+                <u>Given:</u> Raw dataset x <br>
+                <u>To calculate:</u> mean, median, mode, midrange <br>
+                <u>Degree of Accuracy for the Mode:</u> Non-modal, Unimodal and Bimodal Data only <br>
+                <form id="measuresCentralTendency">
+                    <p>
+                        <!-- 
+                            NOTE: For the placeholder content to be shown in the textarea, ensure that the beginning and 
+                            closing textarea tags are on the same line and has no empty space.
+                        -->
+                        <textarea name="dataset1" id="dataset1" placeholder="Type your data values. Separate each value with a comma. Do not put a period at the end." required></textarea>
+                    </p>
+                    <hr>       
+
+                    <p>
+                        <label for="mean">Mean = </label>
+                        <input type="text" name="mean" id="mean" class="normal" readonly>
+                    </p>
+
+                    <p>
+                        <label for="median">Median = </label>
+                        <input type="text" name="median" id="median" class="normal" readonly>
+                    </p>
+
+                    <p>
+                        <label for="mode">Mode = </label>
+                        <input type="text" name="mode" id="mode" class="long" readonly>
+                    </p>
+
+                    <p>
+                        <label for="midrange">Midrange = </label>
+                        <input type="text" name="midrange" id="midrange" class="normal" readonly>
+                    </p>
+
+                    <p>
+                        <button onclick="measuresCentralTendency()" type="submit" class="normal">Calculate</button>
+                        <input type="reset" value="Reset" class="normal">
+                    </p>                               
+                </form>
+
+                <br><br>
+
+                <h3>Measures of Spread: Range, Variance, and Standard Deviation</h3>
+                <!-- Measures of Spread: Range, Variance, and Standard Deviation -->
+                <u>Given:</u> Raw dataset x <br>
+                <u>To calculate:</u> range, variance, and standard deviation <br>
+                <form id="measuresSpread">
+                    <p>
+                        <!-- 
+                            NOTE: For the placeholder content to be shown in the textarea, ensure that the beginning and 
+                            closing textarea tags are on the same line and has no empty space.
+                        -->
+                        <textarea name="dataset2" id="dataset2" placeholder="Type your data values. Separate each value with a comma. Do not put a period at the end." required></textarea>
+                    </p>
+                    <hr>       
+
+                    <p>
+                        <label for="range">Range = </label>
+                        <input type="text" name="range" id="range" class="normal" readonly>
+                    </p>
+
+                    <p>
+                        <label for="variance">Variance = </label>
+                        <input type="text" name="variance" id="variance" class="normal" readonly>
+                    </p>
+
+                    <p>
+                        <label for="standardDeviation">Standard Deviation = </label>
+                        <input type="text" name="standardDeviation" id="standardDeviation" class="normal" readonly>
+                    </p>
+
+                    <p>
+                        <button onclick="measuresSpread()" type="submit" class="normal">Calculate</button>
+                        <input type="reset" value="Reset" class="normal">
+                    </p>                               
+                </form>
+
+                <br><br>
+
+                <h3>Measures of Position: Five-Number Summary</h3>
+                <!-- Measures of Position: Five-Number Summary -->
+                <u>Given:</u> Raw dataset x <br>
+                <u>To calculate:</u> minimum, lower quartile, middle quartile, upper quartile, maximum <br>
+                <form id="measuresPosition">
+                    <p>
+                        <!-- 
+                            NOTE: For the placeholder content to be shown in the textarea, ensure that the beginning and 
+                            closing textarea tags are on the same line and has no empty space.
+                        -->
+                        <textarea name="dataset3" id="dataset3" placeholder="Type your data values. Separate each value with a comma. Do not put a period at the end." required></textarea>
+                    </p>
+                    <hr>       
+
+                    <p>
+                        <label for="minimum">Minimum = </label>
+                        <input type="text" name="minimum" id="minimum" class="short" readonly>
+                    </p>
+
+                    <p>
+                        <label for="lowerQuartile">Lower Quartile = </label>
+                        <input type="text" name="lowerQuartile" id="lowerQuartile" class="short" readonly>
+                    </p>
+
+                    <p>
+                        <label for="middleQuartile">Middle Quartile = </label>
+                        <input type="text" name="middleQuartile" id="middleQuartile" class="short" readonly>
+                    </p>
+
+                    <p>
+                        <label for="upperQuartile">Upper Quartile = </label>
+                        <input type="text" name="upperQuartile" id="upperQuartile" class="short" readonly>
+                    </p>
+
+                    <p>
+                        <label for="maximum">Maximum = </label>
+                        <input type="text" name="maximum" id="maximum" class="short" readonly>
+                    </p>
+
+                    <p>
+                        <button onclick="measuresPosition()" type="submit" class="normal">Calculate</button>
+                        <input type="reset" value="Reset" class="normal">
+                    </p>                               
+                </form>
+            </div>
+            <!-- End Arrays -->
 
             <!-- References -->
             <div class="w3-container w3-padding-32" id="references">
@@ -351,11 +487,13 @@
         <!-- End page content -->
 
         <script src="index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
         <script src="dataTypes.js"></script>
         <script src="numbersOperators.js"></script>
         <script src="dateTime.js"></script>
         <script src="statements.js"></script>
         <script src="functions.js"></script>
         <script src="bodyMassIndex.js"></script>
+        <script src="arrays.js"></script>
     </body>
 </html>
